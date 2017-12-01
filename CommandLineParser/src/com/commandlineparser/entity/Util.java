@@ -1,4 +1,4 @@
-package com.commandlineparser.util;
+package com.commandlineparser.entity;
 
 final class Util {
 	
