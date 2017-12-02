@@ -15,7 +15,6 @@ public class AlreadySelectedException extends ParseException {
 
 	public AlreadySelectedException(String message) {
 		super(message);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public AlreadySelectedException(OptionGroup group, Option option) {

@@ -1,7 +1,5 @@
-package com.commandlineparser.parser;
+package com.commandlineparser.entity;
 
-import com.commandlineparser.entity.CommandLine;
-import com.commandlineparser.entity.Options;
 import com.commandlineparser.exception.ParseException;
 
 /**

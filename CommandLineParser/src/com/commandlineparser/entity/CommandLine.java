@@ -18,7 +18,7 @@ public class CommandLine implements Serializable {
 	/** the processed options */
 	private final List<Option> options = new ArrayList<>();
 	
-	protected CommandLine() {}
+	public CommandLine() {}
 	
 	public boolean hasOption(String opt) {
 		return options.contains(resolveOption(opt));

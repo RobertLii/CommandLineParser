@@ -39,7 +39,7 @@ public class Options implements Serializable {
 		return this;
 	}
 	
-	Collection<OptionGroup> getOptionGroups() {
+	public Collection<OptionGroup> getOptionGroups() {
 		return new HashSet<OptionGroup>(optionGroups.values());
 	}
 	

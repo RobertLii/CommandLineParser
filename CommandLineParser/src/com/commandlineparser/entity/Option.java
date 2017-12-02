@@ -283,6 +283,16 @@ public class Option implements Cloneable, Serializable {
 		return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);
 	}
 	
+	boolean requiresArg() {
+		if (optionalArg) {
+			return false;
+		}
+		if (numberOfArgs == UNLIMITED_VALUES) {
+			return values.isEmpty();
+		}
+		return acceptsArg();
+	}
+	
 	public static Builder builder() {
 		return builder(null);
 	}
